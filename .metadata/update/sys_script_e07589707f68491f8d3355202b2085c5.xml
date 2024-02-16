@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<unload>
+  <sys_script action="INSERT_OR_UPDATE">
+    <action_delete>false</action_delete>
+    <action_insert>false</action_insert>
+    <action_update>true</action_update>
+    <active>true</active>
+    <collection>incident</collection>
+    <name>LogItemChange</name>
+    <order>100</order>
+    <script><![CDATA[const { showStatusUpdate } = require('./dist/modules/myfunction.js');
+showStatusUpdate(current, previous);
+]]></script>
+    <sys_id>e07589707f68491f8d3355202b2085c5</sys_id>
+    <sys_scope display_value="x_820676_sdk_demo2">13bb02cb47d04210ec9fb3f4116d43dd</sys_scope>
+    <when>after</when>
+  </sys_script>
+</unload>

@@ -1,0 +1,25 @@
+{
+    "name": "sdkdemo2",
+    "version": "1.0.0",
+    "description": "now-sdk demo app 2nd attempt",
+    "license": "UNLICENSED",
+    "contributors": [],
+    "scripts": {
+        "build": "tsc --build --clean && tsc --build && now-sdk build",
+        "deploy": "now-sdk deploy"
+    },
+    "now": {
+        "scope": "x_820676_sdk_demo2",
+        "scopeId": "13bb02cb47d04210ec9fb3f4116d43dd",
+        "moduleDir": "dist/modules"
+    },
+    "devDependencies": {
+        "@servicenow/eslint-plugin-sdk-app-plugin": "*",
+        "@servicenow/glide": "25.0.1",
+        "eslint": "8.50.0",
+        "lodash": "^4.17.21"
+    },
+    "dependencies": {
+        "lodash": "^4.17.21"
+    }
+}
