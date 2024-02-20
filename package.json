@@ -6,7 +6,8 @@
     "contributors": [],
     "scripts": {
         "build": "tsc --build --clean && tsc --build && now-sdk build",
-        "deploy": "now-sdk deploy"
+        "deploy": "now-sdk deploy",
+        "clean": "rm -rf target && rm -rf dist"
     },
     "now": {
         "scope": "x_820676_sdk_demo2",
