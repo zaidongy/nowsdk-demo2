@@ -8,7 +8,7 @@
     <collection>incident</collection>
     <name>LogItemChange</name>
     <order>100</order>
-    <script><![CDATA[const { showStatusUpdate } = require('./dist/modules/myfunction.js');
+    <script><![CDATA[const { showStatusUpdate } = require('./src/myfunction.js');
 showStatusUpdate(current, previous);
 ]]></script>
     <sys_id>e07589707f68491f8d3355202b2085c5</sys_id>

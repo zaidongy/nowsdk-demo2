@@ -5,13 +5,13 @@
     "license": "UNLICENSED",
     "contributors": [],
     "scripts": {
-        "build": "tsc --build --clean && tsc --build && now-sdk build",
+        "build": "now-sdk build",
         "deploy": "now-sdk deploy"
     },
     "now": {
         "scope": "x_820676_sdk_demo2",
         "scopeId": "13bb02cb47d04210ec9fb3f4116d43dd",
-        "moduleDir": "dist/modules"
+        "moduleDir": "src"
     },
     "devDependencies": {
         "@servicenow/eslint-plugin-sdk-app-plugin": "*",
