@@ -5,7 +5,7 @@
     "license": "UNLICENSED",
     "contributors": [],
     "scripts": {
-        "build": "tsc --build --clean && tsc --build && now-sdk build",
+        "build": "tsc --build --clean && tsc --build && mv tsconfig.json tsconfig.json.bak && now-sdk build && mv tsconfig.json.bak tsconfig.json",
         "deploy": "now-sdk deploy",
         "clean": "rm -rf target && rm -rf dist"
     },
@@ -15,9 +15,10 @@
         "moduleDir": "dist/modules"
     },
     "devDependencies": {
-        "@servicenow/eslint-plugin-sdk-app-plugin": "*",
+        "@servicenow/eslint-plugin-sdk-app-plugin": "^1.0.3",
         "@servicenow/glide": "25.0.1",
-        "eslint": "8.50.0",
+        "@types/lodash": "^4.14.202",
+        "eslint": "^8.57.0",
         "lodash": "^4.17.21"
     },
     "dependencies": {
