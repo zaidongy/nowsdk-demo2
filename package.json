@@ -1,11 +1,11 @@
 {
     "name": "sdkdemo2",
     "version": "1.0.0",
-    "description": "now-sdk demo app 2nd attempt",
+    "description": "now-sdk demo example",
     "license": "UNLICENSED",
     "contributors": [],
     "scripts": {
-        "build": "tsc --build --clean && tsc --build && mv tsconfig.json tsconfig.json.bak && now-sdk build && mv tsconfig.json.bak tsconfig.json",
+        "build": "rm -rf dist && tsc --build --clean && tsc --build && now-sdk build",
         "deploy": "now-sdk deploy",
         "clean": "rm -rf target && rm -rf dist"
     },
@@ -22,6 +22,7 @@
         "lodash": "^4.17.21"
     },
     "dependencies": {
+        "date-fns": "^3.3.1",
         "lodash": "^4.17.21",
         "moment": "^2.30.1"
     }
