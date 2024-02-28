@@ -27,7 +27,7 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[const { showStatusUpdate } = require('./dist/modules/myfunction.js');
+        <script><![CDATA[const { showStatusUpdate } = require('./dist/modules/src/myfunction.js');
 showStatusUpdate(current, previous);
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
